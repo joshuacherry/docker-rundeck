@@ -5,11 +5,11 @@ LABEL maintainer="Josh Cherry"
 RUN if ! [ -x "$(command -v pip2)" ] ; then \
     sudo apt-get update && \
     sudo apt-get install --no-install-recommends -y \
-      python-pip \
+      python3-pip \
   ;fi \
-  && sudo pip install --upgrade setuptools pip \
+  && sudo pip3 install --upgrade setuptools pip \
   && sudo pip install --upgrade pyyaml ansible=="2.7.*" \
-  && sudo apt-get remove -y python-pip \
+  && sudo apt-get remove -y python3-pip \
   && sudo rm -rf /var/lib/apt/lists/* \
   && sudo rm -Rf /usr/share/doc && sudo rm -Rf /usr/share/man \
   && sudo apt-get clean
