@@ -16,10 +16,10 @@ before_install:
 
 script:
   # Test building Dockerfile.
-  - docker build -t joshuacherry/rundeck .
+  - docker build -t test-container .
 
   # Test running the container.
-  - docker run --rm --name rundeck -d joshuacherry/rundeck
+  - docker run --rm --name rundeck -d test-container
 
   # Verify Ansible is available in the container.
   - docker exec --tty rundeck env TERM=xterm ansible --version

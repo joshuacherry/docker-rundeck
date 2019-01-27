@@ -2,12 +2,10 @@ FROM rundeck/rundeck:3.0.12
 LABEL maintainer="Josh Cherry"
 
 # Install Ansible.
-RUN if ! [ -x "$(command -v pip2)" ] ; then \
-    sudo apt-get update && \
+RUN sudo apt-get update && \
     sudo apt-get install --no-install-recommends -y \
       python3-pip \
       sshpass \
-  ;fi \
   && sudo pip3 install --upgrade setuptools pip \
   && sudo pip install --upgrade pyyaml ansible=="2.7.*" \
   && sudo apt-get remove -y python3-pip \
