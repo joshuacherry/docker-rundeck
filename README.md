@@ -1,8 +1,8 @@
 # Rundeck Docker Image with Ansible
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/joshuacherry/docker-rundeck.svg?branch=master)](https://travis-ci.org/joshuacherry/docker-rundeck)
-[![Docker Automated build](https://img.shields.io/docker/automated/joshuacherry/docker-rundeck.svg?maxAge=2592000)](https://hub.docker.com/r/joshuacherry/docker-rundeck/)
+[![Build Status](https://travis-ci.org/joshuacherry/rundeck.svg?branch=master)](https://travis-ci.org/joshuacherry/rundeck)
+[![Docker Automated build](https://img.shields.io/docker/automated/joshuacherry/rundeck.svg?maxAge=2592000)](https://hub.docker.com/r/joshuacherry/rundeck/)
 ![Ansible](https://img.shields.io/badge/ansible-2.7-blue.svg)
 ![Rundeck](https://img.shields.io/badge/rundeck-3.0.12-blue.svg)
 
